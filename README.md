@@ -1,2 +1,3 @@
-# magicboxtechnology.github.io
-Readme
+# Magicbox Technology
+
+Visit http://magicbox.technology
