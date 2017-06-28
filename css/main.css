@@ -30,6 +30,9 @@ img {
 
 .jumbotron {
   margin-bottom: 0;
+  /*background: url(../img/world_80.jpg) no-repeat 100px -300px;
+  background-position: 0px 50%;
+  min-height: 500px;*/
 }
 .jumbotron h1,
 .jumbotron .h1 {
