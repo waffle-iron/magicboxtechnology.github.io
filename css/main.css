@@ -4,41 +4,110 @@
    Author's custom styles
    ========================================================================== */
 
+/*
+html elements
+*/
 html, body, .jumbotron {
-  background-color: #262930;
-  color: #848fa9 !important;
+  background-color: #22bfbb;
+  color: #black;
 }
 
 body {
   padding-bottom: 0;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 h1, .h1 {
-  color: #fff;
 }
 h2, .h2,
 h3, .h3 {
-  color: #eee;
+  font-family: "Spectral", Didot, Times;
+  text-align: center;
+}
+h2{
+    font-size: 2em;
+    margin: auto;
+}
+h3{
+    margin-top: 2em;
+    font-size: 1.8em;
+}
+@media all and (min-width: 768px){
+    h2{
+        font-size: 3em;
+    }
+    h3{
+        font-size: 2.4em;
+    }
 }
 p {
-  color: #848fa9;
+    margin-bottom: 1em;
+}
+hr{
+    margin: 1em auto 2.8em;
+    border-bottom: 3px white solid;
+    width: 120px;
 }
 
 img {
   width: 25%;
 }
+section{
+    padding-bottom: 2.6em;
+}
+a{
+    color: black;
+    text-decoration: underline;
+}
+a:hover,
+a:focus{
+    text-decoration: none;
+    color: #333;
+}
+a:active{
+    text-decoration: underline;
+    color: white;
+}
 
+
+/*
+header section
+*/
 .jumbotron {
-  margin-bottom: 0;
-  /*background: url(../img/world_80.jpg) no-repeat 100px -300px;
-  background-position: 0px 50%;
-  min-height: 500px;*/
+    padding: 0;
+    height: 100%; width: 100%;
+    height: 100vh; min-height: 33em;
+    background: url(../img/world.jpg) no-repeat;
+    background-size: cover;
 }
 .jumbotron h1,
 .jumbotron .h1 {
   color: #fff;
 }
-
+.logo{
+    background: url(../img/logo.svg) no-repeat;
+    text-indent: -9999px;
+    height: 160px;
+    margin: 2em auto 2%;
+    max-width: 360px;
+}
+@media all and (min-width: 768px){
+    .logo{
+        width: 30%;
+    }
+}
+.strapline{
+    width: 80%;
+    line-height: 1.35em;
+    color: white;
+}
+@media all and (min-width: 768px){
+    .strapline{
+        width: 50%;
+    }
+}
 .navigation {
   background-color: #171C27;
 }
@@ -46,6 +115,9 @@ img {
   color:  #eee;
 }
 
+/*
+page
+*/
 fieldset {
   margin-bottom: 20px;
 }
@@ -68,10 +140,36 @@ fieldset {
 .demo {
   padding-top: 4%;
 }
+.newsletter{
+    height: 65vh; min-height: 23em;
+    background: url(../img/blurred-feet.jpg) no-repeat center;
+    background-size: cover;
+    color: white;
+}
+.newsletter input{
+    color: black;
+}
+input.email{
+    padding: 0.6em;
+    max-width: 360px;
+    width: 100%;
+}
 
 #mc_embed_signup {
   background: transparent !important;
 }
 #mc_embed_signup .mc-field-group label {
   color: #848fa9;
+}
+
+/* footer */
+footer a{ color: white; }
+footer a:hover{ color: #ddd; }
+
+/* helper classes */
+.center{
+    text-align: center;
+}
+.gold{
+    background-color: #c9c350;
 }

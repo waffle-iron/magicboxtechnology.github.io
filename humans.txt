@@ -3,7 +3,7 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Ben Byford -- Design and front-end -- @benbyford
 
 # THANKS
 
