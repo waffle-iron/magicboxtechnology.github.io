@@ -1,0 +1,74 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html, body, .jumbotron {
+  background-color: #262930;
+  color: #848fa9 !important;
+}
+
+body {
+  padding-bottom: 0;
+}
+
+h1, .h1 {
+  color: #fff;
+}
+h2, .h2,
+h3, .h3 {
+  color: #eee;
+}
+p {
+  color: #848fa9;
+}
+
+img {
+  width: 25%;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+.jumbotron h1,
+.jumbotron .h1 {
+  color: #fff;
+}
+
+.navigation {
+  background-color: #171C27;
+}
+.btn-link {
+  color:  #eee;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+.interest {
+  background-color: #171C27;
+  margin-top: 30px;
+  padding: 20px 0 10px 0;
+}
+.interest2 {
+  background-color: #171C27;
+  padding: 20px 0 10px 0;
+}
+.diagrams {
+  background-color: #ffffff;
+  margin-top: 30px;
+  padding: 20px 0 10px 0;
+  text-align: center;
+}
+.demo {
+  padding-top: 4%;
+}
+
+#mc_embed_signup {
+  background: transparent !important;
+}
+#mc_embed_signup .mc-field-group label {
+  color: #848fa9;
+}
