@@ -1,5 +1,3 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -25,6 +23,7 @@ h2, .h2,
 h3, .h3 {
   font-family: "Spectral", Didot, Times;
   text-align: center;
+  letter-spacing: -1px;
 }
 h2{
     font-size: 2em;
@@ -55,7 +54,7 @@ img {
   width: 25%;
 }
 section{
-    padding-bottom: 2.6em;
+    padding-bottom: 3.4em;
 }
 a{
     color: black;
@@ -81,6 +80,7 @@ header section
     height: 100vh; min-height: 33em;
     background: url(../img/world.jpg) no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -163,6 +163,7 @@ input.email{
 }
 
 /* footer */
+footer {color: white; }
 footer a{ color: white; }
 footer a:hover{ color: #ddd; }
 
@@ -170,6 +171,37 @@ footer a:hover{ color: #ddd; }
 .center{
     text-align: center;
 }
-.gold{
-    background-color: #c9c350;
+.gold{ background-color: #c9c350; }
+.white{ background-color: white; }
+.white hr{ border-color: black; }
+
+
+/*
+* animations
+*/
+
+.logo{
+    animation: logo 2s both cubic-bezier(0.05, 0.95, 0.35, 0.95);
+    -webkit-animation: logo 2s both cubic-bezier(0.05, 0.95, 0.35, 0.95);
+}
+
+@keyframes logo {
+    0%  {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes logo {
+    0%  {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
