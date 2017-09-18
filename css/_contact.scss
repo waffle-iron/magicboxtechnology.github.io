@@ -4,20 +4,39 @@
   justify-content: center;
 
   .c-container {
-    @include container($direction: column);
+    @include container();
   }
 
-  &__title {
-    margin: 1rem 1rem 0.500rem 1rem;
+  &__details {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    &-title {
+      margin: 1rem 1rem 0.500rem 1rem;
+    }
+
+    &-link {
+      color: var(--color-green-vogue);
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    &-link:last-child {
+      margin: 0 1rem 1rem 1rem;
+    }
   }
 
-  &__link {
-    color: var(--color-green-vogue);
-    margin: 0 1rem;
-    text-decoration: none;
-  }
-  &__link:last-child {
-    margin: 0 1rem 1rem 1rem;
+
+  &__social {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+
+    &-link {
+      color: var(--color-green-vogue);
+      padding: 1rem;
+    }
   }
 }
 
@@ -25,7 +44,7 @@
 @media screen and (min-width: 48rem) {
   .c-contact {
     .c-container {
-      @include container($direction: column, $width: 80rem);
+      @include container($width: 80rem);
     }
   }
 }
