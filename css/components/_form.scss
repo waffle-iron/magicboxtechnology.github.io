@@ -1,0 +1,34 @@
+.c-form {
+  border: 1px solid #000;
+  &--success {
+    color: green;
+  }
+  &--fail {
+    color: red;
+  }
+}
+
+/*
+  // less
+  .form {
+    .success {}
+    .fail {}
+  }
+
+  // less output
+  .form {}
+  .form .success {}
+  .form .fail {}
+
+  // sass
+  .form {
+    &--success {}
+    &--fail {}
+  }
+
+  // sass output
+  .form {}
+  .form--success {}
+  .form--fail {}
+
+*/

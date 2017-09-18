@@ -3,7 +3,7 @@
 
 # TEAM
 
-    Ben Byford -- Design and front-end -- @benbyford
+    Ian Crowther -- Design and front-end -- @iancrowther
 
 # THANKS
 
@@ -11,5 +11,4 @@
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    jQuery, Modernizr
+    HTML, CSS

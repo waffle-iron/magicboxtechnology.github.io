@@ -1,0 +1,156 @@
+//https://gomasuga.com/blog/creating-a-sticky-footer-with-flexbox
+// @media screen and (min-width: 48em)
+// 965b0dfddebea56…01706605.css:1
+// .header-main.lower-opacity {
+//     background-color: rgba(5,62,80,.9) !important;
+//     -webkit-transition: .2s linear;
+//     transition: .2s linear;
+//     height: 65px !important;
+// }
+
+@mixin header($height: 3rem) {
+  background: var(--color-green-vogue);
+  display: flex;
+  height: $height;
+  justify-content: center;
+  opacity: .95;
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+}
+
+.c-header {
+  @include header();
+
+  .c-container {
+    @include container();
+  }
+
+  &__title {
+    align-items: center;
+    display: flex;
+
+    &-link {
+      display: flex;
+      text-decoration: none;
+    }
+
+    &-logo {
+      display: flex;
+      margin: 0 0.500rem;
+    }
+
+    &-headings {
+      flex-direction: column;
+    }
+
+    &-heading {
+      color: var(--color-white);
+      font-size: 1rem;
+    }
+
+    &-subtitle {
+      color: var(--color-cerulian);
+      font-size: 0;
+      text-align: center;
+    }
+  }
+
+  &__nav {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &-list {
+      display: flex;
+      list-style: none;
+      padding: 0;
+    }
+    &-list-item:first-child {
+      display: none;
+    }
+    &-list-item {
+      font-size: 0.750rem; //12px
+      padding-right: 0.50rem;
+
+      &_link {
+        border-left: 0.125rem solid var(--color-cerulian);
+        color: var(--color-white);
+        padding-left: 0.500rem;
+        text-decoration: none;
+
+        &:hover {
+          border-left: 0.125rem solid var(--color-white);
+          color: var(--color-cerulian);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 26rem) {
+  .c-header {
+    @include header($height: 4rem);
+
+    &__title {
+      &-heading {
+        font-size: 1.250rem;
+      }
+
+      &-subtitle {
+        font-size: 0.1rem;
+      }
+    }
+
+    &__nav {
+      &-list-item:first-child {
+        display: initial;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .c-header {
+    .c-container {
+      @include container($width: 80rem);
+    }
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .c-header {
+    @include header($height: 6rem);
+
+    &__title {
+      &-logo {
+        margin: 0 0.500rem 0 0.500rem;
+      }
+
+      &-heading {
+        font-size: 2rem;
+      }
+
+      &-subtitle {
+        font-size: 0.625rem;
+      }
+    }
+
+    &__nav {
+      &-list-item {
+        padding-right: 1rem;
+        font-size: 1rem;
+
+        &_link {
+          border-left: 0.25rem solid var(--color-cerulian);
+          padding-left: 1rem;
+
+          &:hover {
+            border-left: 0.25rem solid var(--color-white);
+          }
+        }
+      }
+    }
+  }
+}

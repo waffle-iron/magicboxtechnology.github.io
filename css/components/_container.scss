@@ -1,0 +1,6 @@
+// TODO: BEMIT tools?
+@mixin container($width: 100vw, $direction: initial) {
+  display: flex;
+  flex-direction: $direction;
+  width: $width;
+}

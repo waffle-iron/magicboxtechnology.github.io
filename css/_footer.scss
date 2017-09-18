@@ -1,0 +1,90 @@
+@mixin footer($height: 3rem) {
+  background: var(--color-green-vogue);
+  bottom: 0;
+  color: var(--color-iron);
+  display: flex;
+  height: $height;
+  justify-content: center;
+  opacity: .95;
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+}
+
+.c-footer {
+  @include footer();
+
+  .c-container {
+    @include container();
+  }
+
+  &__logo {
+    align-items: center;
+    display: flex;
+    flex: 1;
+
+    &-text {
+      margin: 0 0.500rem;
+      font-size: 0.5625rem;
+    }
+  }
+
+  &__contact {
+    align-items: flex-end;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+
+    &-item {
+      color: var(--color-iron);
+      font-size: 0.5625rem;
+      margin: 0 0.500rem;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (min-width: 26rem) {
+  .c-footer {
+    @include footer($height: 4rem);
+
+    &__logo {
+      &-text {
+        font-size: 0.750rem;
+      }
+    }
+
+    &__contact {
+      &-item {
+        font-size: 0.750rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .c-footer {
+    .c-container {
+      @include container($width: 80rem);
+    }
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .c-footer {
+    &__logo {
+      &-text {
+        font-size: 0.8125rem;
+        margin: 0 1rem;
+      }
+    }
+
+    &__contact {
+      &-item {
+        font-size: 0.8125rem;
+        margin: 0 1rem;
+      }
+    }
+  }
+}

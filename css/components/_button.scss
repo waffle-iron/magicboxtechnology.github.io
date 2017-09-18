@@ -1,0 +1,26 @@
+.c-button {
+  font-size: 18px;
+  line-height: 1.5;
+  width: 15%;
+}
+.c-button:first-child {
+  align-self: flex-end;
+}
+
+.c-button__primary {
+    background: var(--color-sandstorm);
+    // border: 1px solid var(--color-green-vogue);
+    box-shadow: 0px 1px 1px var(--color-green-vogue);
+    color: var(--color-green-vogue);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.750rem 1rem;
+    // width: 8rem;
+    // height: 3rem;
+    // text-align: center;
+  }
+}
+
+// .cta {
+//   margin: 2rem 0;
+// }

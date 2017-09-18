@@ -1,0 +1,36 @@
+.c-contact {
+  background: var(--color-iron);
+  display: flex;
+  justify-content: center;
+
+  .c-container {
+    @include container($direction: column);
+  }
+
+  &__title {
+    margin: 1rem 1rem 0.500rem 1rem;
+  }
+
+  &__link {
+    color: var(--color-green-vogue);
+    margin: 0 1rem;
+    text-decoration: none;
+  }
+  &__link:last-child {
+    margin: 0 1rem 1rem 1rem;
+  }
+
+  &__item {
+    margin: .5rem 1rem 1rem 1rem;
+  }
+}
+
+@media screen and (min-width: 26rem) {}
+@media screen and (min-width: 48rem) {
+  .c-contact {
+    .c-container {
+      @include container($direction: column, $width: 80rem);
+    }
+  }
+}
+@media screen and (min-width: 64rem) {}

@@ -1,0 +1,113 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: sans-serif;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-default);
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0
+}
+
+em {
+  font-family: var(--font-emphasis);
+}
+
+.c-main { /* https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
+  flex: 1;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+h1 {
+  font-size: 1rem; //16px
+}
+h3 {
+  font-size: 1rem; //16px
+}
+h4 {
+  font-size: 0.750rem; //12px
+}
+
+p, a {
+  font-size: 0.6875rem; //11px
+}
+
+hr {
+  border: 1px solid var(--color-iron);
+  margin: 0.500rem;
+}
+
+@media screen and (min-width: 26rem) {
+  .c-main {
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  h1 {
+    font-size: 1.250rem; //20px
+  }
+  h3 {
+    font-size: 1.125rem; //18px
+  }
+  h4 {
+    font-size: 0.8125rem; //13px
+  }
+
+  p, a {
+    font-size: 0.750rem; //12px
+  }
+}
+@media screen and (min-width: 33rem) {
+  h3 {
+    font-size: 1.250rem; //20px
+  }
+  h4 {
+    font-size: 0.875rem; //14px
+  }
+}
+@media screen and (min-width: 48rem) {
+  h1 {
+    font-size: 1.563rem; //25px
+  }
+  h3, h4 {}
+  p, a {
+    font-size: 0.875rem; //14px
+  }
+
+  hr {
+    margin: 1rem;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .c-main {
+    margin-top: 6rem;
+  }
+
+  h1 {
+    font-size: 2rem; //32px
+  }
+  h3 {
+    font-size: 1.750rem; //?px
+  }
+  h4 {
+    font-size: 1rem; //?px
+  }
+
+  p, a {
+    font-size: 1rem; //16px
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "magicbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass css/style.scss ./style.css -w",
+    "serve": "livereload ."
+  },
+  "keywords": [
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {},
+  "description": ""
+}

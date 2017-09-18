@@ -1,0 +1,39 @@
+
+.c-company {
+  display: flex;
+  justify-content: center;
+
+  .c-container {
+    @include container();
+  }
+
+  &__about {
+    margin: 1rem;
+  }
+
+  &__about:target {
+    padding-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 26rem) {
+  .c-company {
+    &__about:target {
+      padding-top: 5rem;
+    }
+  }
+}
+@media screen and (min-width: 48rem) {
+  .c-company {
+    .c-container {
+      @include container($width: 80rem);
+    }
+  }
+}
+@media screen and (min-width: 64rem) {
+  .c-company {
+    &__about:target {
+      padding-top: 7rem;
+    }
+  }
+}

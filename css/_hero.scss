@@ -1,0 +1,96 @@
+// TODO - make a hero mixin
+.c-hero {
+  background: url('./img/banner_320.png') no-repeat;
+  background-position: center bottom;
+  display: flex;
+  justify-content: center;
+  height: 8rem;
+
+  .c-container {
+    @include container($width: 18rem);
+  }
+
+  .c-hero__headline {
+    color: var(--color-green-vogue);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    &-title {
+      font-family: var(--font-headline);
+      margin: 0.500rem 0;
+      max-width: 12rem;
+    }
+
+    &-subtext {
+      font-family: var(--font-headline);
+    }
+  }
+}
+
+@media screen and (min-width: 26rem) {
+  .c-hero {
+    background: url('./img/banner_416.png') no-repeat;
+    background-position: center bottom;
+    height: 10rem;
+
+    .c-container {
+      @include container($width: 24rem);
+    }
+
+    .c-hero__headline {
+      &-title {
+        max-width: 16rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 33rem) {
+  .c-hero {
+    background: url('./img/banner_528.png') no-repeat;
+    background-position: center bottom;
+    height: 12rem;
+
+    .c-container {
+      @include container($width: 30rem);
+    }
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .c-hero {
+    background: url('./img/banner_768.png') no-repeat;
+    background-position: center bottom;
+    height: 12rem;
+
+    .c-container {
+      @include container($width: 44rem);
+    }
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .c-hero {
+    background: url('./img/banner_1024.png') no-repeat;
+    background-position: center bottom;
+    height: 16rem;
+
+    .c-container {
+      @include container($width: 60rem);
+    }
+
+    .c-hero__headline {
+      &-title {
+        max-width: 26rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  .c-hero {
+    background: url('./img/banner_1280.png') no-repeat;
+    background-position: center bottom;
+  }
+}
