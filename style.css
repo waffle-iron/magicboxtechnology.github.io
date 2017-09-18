@@ -356,10 +356,6 @@ td,
 th {
   padding: 0; }
 
-/*
- * TODO: should i use css variables in the pre-processor or just use sass
- * https://css-tricks.com/difference-between-types-of-css-variables/
- */
 :root {
   --color-green-vogue: #01284f;
   --color-cerulian: #00ace5;
@@ -630,7 +626,6 @@ hr {
         .c-header__nav-list-item_link:hover {
           border-left: 0.25rem solid var(--color-white); } }
 
-/* TODO: re-construct the banner image to repeat the brick work horizontaly and vertically */
 .c-hero {
   background: url("./img/banner_320.png") no-repeat;
   background-position: center bottom;
@@ -791,8 +786,6 @@ hr {
     text-decoration: none; }
   .c-contact__link:last-child {
     margin: 0 1rem 1rem 1rem; }
-  .c-contact__item {
-    margin: .5rem 1rem 1rem 1rem; }
 
 @media screen and (min-width: 48rem) {
   .c-contact .c-container {
