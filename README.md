@@ -1,1 +1,2 @@
+[![Waffle.io - Issues in progress](https://badge.waffle.io/magicboxtechnology/magicboxtechnology.github.io.png?label=in%20progress&title=In%20Progress)](https://waffle.io/magicboxtechnology/magicboxtechnology.github.io?utm_source=badge)
 # www
